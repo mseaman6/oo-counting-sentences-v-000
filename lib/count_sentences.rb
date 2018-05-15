@@ -23,6 +23,7 @@ class String
           string.split("? ")
         else
         end
+      end
     binding.pry
     complex_string.count
   end
