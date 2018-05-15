@@ -16,7 +16,14 @@ class String
 
   def count_sentences
     complex_string = self.split(". ")
-    complex_string.count
+      complex_string.each do |string|
+        if string.include? "!"
+          string.split("! ")
+        elsif string.include? "?"
+          string.split("? ")
+        else
+        end
     binding.pry
+    complex_string.count
   end
 end
