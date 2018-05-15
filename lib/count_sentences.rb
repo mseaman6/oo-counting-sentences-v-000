@@ -15,8 +15,9 @@ class String
   end
 
   def count_sentences
-    split_sentences = self.split(". " || "? " || "! ")
-    split_sentences.count
-    binding.pry
+    complex_string = self.split(". ")
+    less_complex_string = complex_string.split("? ")
+    least_complex_string = less_complex_string.split("! ")
+    least_complex_string.count
   end
 end
