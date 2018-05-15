@@ -18,9 +18,9 @@ class String
     complex_string = self.split(". ")
     counter = complex_string.count
       complex_string.each do |string|
-        if string.include? "!"
+        if string.include? "! "
           counter += string.split("! ").count
-        elsif string.include? "?"
+        elsif string.include? "? "
           counter += string.split("? ").count
         else
         end
