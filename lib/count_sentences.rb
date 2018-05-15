@@ -17,5 +17,6 @@ class String
   def count_sentences
     complex_string = self.split(". ")
     complex_string.count
+    binding.pry
   end
 end
